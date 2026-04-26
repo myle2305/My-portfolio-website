@@ -462,11 +462,6 @@ const projects = {
         src: "../assets/hm-layering-wip.jpg",
         title: "Layering work-in-progress",
         caption: "Complex visual layering created depth and intensity, but also made rendering and iteration slower, shaping the production workflow."
-      },
-      {
-        src: "../assets/hm-project-timeline.jpg",
-        title: "Project timeline",
-        caption: "The Padlet process journal documented planning, weekly reflection, research, technical experiments, and production decisions."
       }
     ],
     hero: "../assets/hm-freshup-thumb.png"
