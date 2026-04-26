@@ -613,6 +613,7 @@ function initNav() {
       <div class="nav-links" id="site-menu">
         <a href="${base}index.html#work">Projects</a>
         <a href="${base}about.html">About</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   `;
@@ -644,7 +645,7 @@ function initFooter() {
         <a href="https://www.behance.net/myle44" target="_blank" rel="noopener" aria-label="Behance">Be</a>
       </div>
     </div>
-    <div class="footer-contact" aria-label="Contact details">
+    <div class="footer-contact" id="contact" aria-label="Contact details">
       <a href="mailto:mylenguyentuong@gmail.com">mylenguyentuong@gmail.com</a>
       <a href="tel:+61433532305">+61 433532305</a>
       <span>Melbourne, VIC</span>
