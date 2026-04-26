@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="My Le favicon">
-  <rect width="64" height="64" rx="18" fill="#f7f0f6"/>
   <rect x="10" y="16" width="20" height="32" rx="10" fill="#f1b0da" stroke="#3c284b" stroke-width="2"/>
   <rect x="34" y="16" width="20" height="32" rx="10" fill="#c7d7fb" stroke="#3c284b" stroke-width="2"/>
   <text x="20" y="38" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#3c284b">M</text>
