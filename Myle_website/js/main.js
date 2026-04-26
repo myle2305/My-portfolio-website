@@ -567,7 +567,7 @@ const projects = {
         caption: "This process map clarifies how visual feedback and audio behaviour connect inside the final interactive experience."
       }
     ],
-    hero: "../assets/sg-interface.jpg"
+    hero: "../assets/sg.jpg"
   }
 };
 
