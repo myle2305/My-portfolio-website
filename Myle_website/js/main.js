@@ -640,9 +640,15 @@ function initFooter() {
       </nav>
       <div class="footer-socials" aria-label="Social links">
         <a href="https://www.linkedin.com/in/my-le-002452354/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="Instagram">ig</a>
+        <a href="https://www.instagram.com/mielei_23/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
         <a href="https://www.behance.net/myle44" target="_blank" rel="noopener" aria-label="Behance">Be</a>
       </div>
+    </div>
+    <div class="footer-contact" aria-label="Contact details">
+      <a href="mailto:mylenguyentuong@gmail.com">mylenguyentuong@gmail.com</a>
+      <a href="tel:+61433532305">+61 433532305</a>
+      <span>Melbourne, VIC</span>
+      <a href="https://www.instagram.com/mielei_23/" target="_blank" rel="noopener">@mielei_23</a>
     </div>
     <a href="${base}index.html" class="footer-logo" aria-label="My Le home">
       <span class="footer-logo-mark"><span>M</span><span>L</span></span>
