@@ -691,6 +691,24 @@ img {
   text-transform: none;
 }
 
+.contact-item {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 20px;
+}
+
+.contact-item svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .footer-links a,
 .footer-socials a,
 .footer-contact a {
