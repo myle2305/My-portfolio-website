@@ -626,6 +626,19 @@ img {
   color: var(--muted);
 }
 
+.media-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--ink);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.media-placeholders .section-heading h2 {
+  padding-left: 18px;
+}
+
 .placeholder span {
   font-size: clamp(18px, 2.5vw, 30px);
   font-weight: 300;
@@ -811,6 +824,10 @@ img {
   .project-overview,
   .placeholder-grid {
     grid-template-columns: 1fr;
+  }
+
+  .media-placeholders .section-heading h2 {
+    padding-left: 0;
   }
 }
 

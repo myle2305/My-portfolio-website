@@ -51,6 +51,7 @@ const projects = {
     reflection:
       "This project helped me connect interaction design principles with emotional play. I learned that small feedback moments, such as sound and sparkle cues, can make a creative tool feel more satisfying and alive.",
     liveUrl: "https://myle2305.github.io/asm3/",
+    hidePlaceholders: true,
     screenshots: [
       {
         src: "../assets/lmui.jpg",
@@ -375,14 +376,10 @@ const projects = {
     hidePlaceholders: true,
     screenshots: [
       {
-        src: "../assets/hm-presentation-thumb.png",
-        title: "Final project presentation",
-        caption: "The project was presented as a collaboration exploring uncanny, serene, and visceral sensations through heightened multisensory video."
-      },
-      {
         src: "../assets/hm-freshup-thumb.png",
         title: "Freshup",
-        caption: "Freshup uses a nostalgic food-commercial visual language. My contribution focused on sound design, using degraded audio textures to make the sweetness feel strange and uncanny."
+        caption: "Freshup uses a nostalgic food-commercial visual language. My contribution focused on sound design, using degraded audio textures to make the sweetness feel strange and uncanny.",
+        url: "https://youtu.be/7Q4SAgfywXU"
       },
       {
         src: "../assets/hm-freshup-eq.jpg",
@@ -402,7 +399,8 @@ const projects = {
       {
         src: "../assets/hm-when-eyes-thumb.png",
         title: "When Eyes Don’t Blink",
-        caption: "This piece explored uncanny human-like presence through stillness, staring, and the discomfort of a figure that feels almost alive but not fully human."
+        caption: "This piece explored uncanny human-like presence through stillness, staring, and the discomfort of a figure that feels almost alive but not fully human.",
+        url: "../assets/hm-when-eyes-dont-blink.mov"
       },
       {
         src: "../assets/hm-uncanny-inspiration.jpg",
@@ -432,7 +430,8 @@ const projects = {
       {
         src: "../assets/hm-endless-lullaby-thumb.png",
         title: "Endless Lullaby",
-        caption: "This video explored a softer, more serene sensory direction through slow atmosphere, layered visuals, and dreamlike pacing."
+        caption: "This video explored a softer, more serene sensory direction through slow atmosphere, layered visuals, and dreamlike pacing.",
+        url: "https://www.youtube.com/watch?v=-K2vS8EjnlI"
       },
       {
         src: "../assets/hm-serene-moodboard.jpg",
@@ -452,7 +451,8 @@ const projects = {
       {
         src: "../assets/hm-beyond-frames-thumb.png",
         title: "Beyond the Frames",
-        caption: "Beyond the Frames extends the project’s spatial and sensory language through layered composition, movement, and atmosphere."
+        caption: "Beyond the Frames extends the project’s spatial and sensory language through layered composition, movement, and atmosphere.",
+        url: "https://youtu.be/HVvPwG_ARxk"
       },
       {
         src: "../assets/hm-layering-wip.jpg",
@@ -751,7 +751,6 @@ function renderProjectPage() {
         <div class="process-line">
           <span>Research</span><span>Sketching</span><span>Prototype</span><span>User Testing</span><span>Iteration</span>
         </div>
-        <p>Use this section to add research notes, early sketches, prototype decisions, feedback from testing, and the main iterations made after critique.</p>
       </article>
       ${caseBlock("Outcome", project.outcome)}
       ${caseBlock("Reflection", project.reflection)}
@@ -832,6 +831,7 @@ function screenshot(item) {
     item.type === "video"
       ? `<video src="${item.src}" controls muted playsinline preload="metadata"></video>`
       : `<img src="${item.src}" alt="${item.title}">`;
+  const link = item.url ? `<a class="media-link" href="${item.url}" target="_blank" rel="noopener">Open video project</a>` : "";
 
   return `
     <figure class="media-shot">
@@ -839,6 +839,7 @@ function screenshot(item) {
       <figcaption>
         <span>${item.title}</span>
         <p>${item.caption}</p>
+        ${link}
       </figcaption>
     </figure>
   `;
