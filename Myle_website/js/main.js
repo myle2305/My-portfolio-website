@@ -582,9 +582,9 @@ const projectGroups = [
   {
     id: "animation-video",
     eyebrow: "Heightened Multisensory + Sound Interaction",
-    title: "Experimental Video, Spatial Sound, and Sensory Media",
+    title: "Experimental Video and Sensory Media",
     description:
-      "Projects focused on audiovisual atmosphere, interactive sound, spatial exploration, motion, and emotional sensory experience."
+      "Projects focused on audiovisual atmosphere, motion, sound texture, and emotional sensory experience."
   }
 ];
 
