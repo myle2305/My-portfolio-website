@@ -376,10 +376,11 @@ const projects = {
     hidePlaceholders: true,
     screenshots: [
       {
-        src: "../assets/hm-freshup-thumb.png",
+        type: "video",
+        src: "../assets/hm-freshup-video.mp4",
+        poster: "../assets/hm-freshup-thumb.png",
         title: "Freshup",
-        caption: "Freshup uses a nostalgic food-commercial visual language. My contribution focused on sound design, using degraded audio textures to make the sweetness feel strange and uncanny.",
-        url: "https://youtu.be/7Q4SAgfywXU"
+        caption: "Freshup uses a nostalgic food-commercial visual language. My contribution focused on sound design, using degraded audio textures to make the sweetness feel strange and uncanny."
       },
       {
         src: "../assets/hm-freshup-eq.jpg",
@@ -397,10 +398,11 @@ const projects = {
         caption: "Two additional tracks simulated old TV static at a low volume, adding noise and unease without overpowering the edit."
       },
       {
-        src: "../assets/hm-when-eyes-thumb.png",
+        type: "video",
+        src: "../assets/hm-when-eyes-dont-blink-video.mp4",
+        poster: "../assets/hm-when-eyes-thumb.png",
         title: "When Eyes Don’t Blink",
-        caption: "This piece explored uncanny human-like presence through stillness, staring, and the discomfort of a figure that feels almost alive but not fully human.",
-        url: "../assets/hm-when-eyes-dont-blink.mov"
+        caption: "This piece explored uncanny human-like presence through stillness, staring, and the discomfort of a figure that feels almost alive but not fully human."
       },
       {
         src: "../assets/hm-uncanny-inspiration.jpg",
@@ -428,10 +430,11 @@ const projects = {
         caption: "Aggressive light flicker was used to mimic firelight and create a jarring visual effect that amplifies discomfort."
       },
       {
-        src: "../assets/hm-endless-lullaby-thumb.png",
+        type: "video",
+        src: "../assets/hm-endless-lullaby-video.mp4",
+        poster: "../assets/hm-endless-lullaby-thumb.png",
         title: "Endless Lullaby",
-        caption: "This video explored a softer, more serene sensory direction through slow atmosphere, layered visuals, and dreamlike pacing.",
-        url: "https://www.youtube.com/watch?v=-K2vS8EjnlI"
+        caption: "This video explored a softer, more serene sensory direction through slow atmosphere, layered visuals, and dreamlike pacing."
       },
       {
         src: "../assets/hm-serene-moodboard.jpg",
@@ -449,10 +452,11 @@ const projects = {
         caption: "A soft soundtrack was tested to align with the layered visual direction while waiting for collaborative audio material."
       },
       {
-        src: "../assets/hm-beyond-frames-thumb.png",
+        type: "video",
+        src: "../assets/hm-beyond-frames-video.mp4",
+        poster: "../assets/hm-beyond-frames-thumb.png",
         title: "Beyond the Frames",
-        caption: "Beyond the Frames extends the project’s spatial and sensory language through layered composition, movement, and atmosphere.",
-        url: "https://youtu.be/HVvPwG_ARxk"
+        caption: "Beyond the Frames extends the project’s spatial and sensory language through layered composition, movement, and atmosphere."
       },
       {
         src: "../assets/hm-layering-wip.jpg",
@@ -829,9 +833,8 @@ function placeholder(title, copy) {
 function screenshot(item) {
   const media =
     item.type === "video"
-      ? `<video src="${item.src}" controls muted playsinline preload="metadata"></video>`
+      ? `<video src="${item.src}" ${item.poster ? `poster="${item.poster}"` : ""} controls controlsList="nodownload" playsinline preload="metadata"></video>`
       : `<img src="${item.src}" alt="${item.title}">`;
-  const link = item.url ? `<a class="media-link" href="${item.url}" target="_blank" rel="noopener">Open video project</a>` : "";
 
   return `
     <figure class="media-shot">
@@ -839,7 +842,6 @@ function screenshot(item) {
       <figcaption>
         <span>${item.title}</span>
         <p>${item.caption}</p>
-        ${link}
       </figcaption>
     </figure>
   `;
