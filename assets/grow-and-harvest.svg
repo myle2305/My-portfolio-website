@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Grow and Harvest placeholder</title>
+  <desc id="desc">Editorial placeholder for an interactive farming game.</desc>
+  <rect width="1200" height="720" fill="#f7f5f0"/>
+  <rect x="72" y="84" width="1056" height="520" rx="10" fill="#e7dfce" stroke="#111" stroke-width="3"/>
+  <g stroke="#111" stroke-width="3">
+    <rect x="168" y="176" width="180" height="130" rx="8" fill="#b96f40"/>
+    <rect x="408" y="176" width="180" height="130" rx="8" fill="#b96f40"/>
+    <rect x="648" y="176" width="180" height="130" rx="8" fill="#b96f40"/>
+    <rect x="168" y="366" width="180" height="130" rx="8" fill="#b96f40"/>
+    <rect x="408" y="366" width="180" height="130" rx="8" fill="#b96f40"/>
+    <rect x="648" y="366" width="180" height="130" rx="8" fill="#b96f40"/>
+  </g>
+  <path d="M498 420c-12-70 48-112 92-50-60-12-74 25-92 50z" fill="#1e6c69"/>
+  <path d="M262 226c-4-58 48-90 78-38-44-10-58 14-78 38z" fill="#1e6c69"/>
+  <circle cx="738" cy="224" r="34" fill="#f5d76e" stroke="#111" stroke-width="3"/>
+  <rect x="906" y="176" width="118" height="320" rx="59" fill="#fffaf0" stroke="#111" stroke-width="3"/>
+  <text x="72" y="676" fill="#111" font-family="Inter, Arial" font-size="30" font-weight="700">PLACEHOLDER · Replace with farming game states or animation frames</text>
+</svg>

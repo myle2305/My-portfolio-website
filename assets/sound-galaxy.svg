@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Sound Galaxy placeholder</title>
+  <desc id="desc">Editorial placeholder for a spatial audio starfield interface.</desc>
+  <rect width="1200" height="720" fill="#111"/>
+  <circle cx="248" cy="172" r="5" fill="#f7f5f0"/>
+  <circle cx="392" cy="426" r="7" fill="#f5d76e"/>
+  <circle cx="710" cy="204" r="6" fill="#f7f5f0"/>
+  <circle cx="948" cy="492" r="9" fill="#e8b09a"/>
+  <circle cx="560" cy="306" r="92" fill="none" stroke="#1e6c69" stroke-width="3"/>
+  <circle cx="560" cy="306" r="176" fill="none" stroke="#f7f5f0" stroke-opacity=".24" stroke-width="2"/>
+  <path d="M392 426 560 306 710 204 948 492" fill="none" stroke="#f5d76e" stroke-width="3"/>
+  <g fill="#f7f5f0" opacity=".75">
+    <circle cx="100" cy="360" r="3"/><circle cx="180" cy="580" r="4"/><circle cx="824" cy="110" r="3"/><circle cx="1048" cy="188" r="4"/><circle cx="1080" cy="626" r="3"/><circle cx="642" cy="610" r="4"/><circle cx="312" cy="292" r="3"/>
+  </g>
+  <text x="70" y="664" fill="#f7f5f0" font-family="Inter, Arial" font-size="30" font-weight="700">PLACEHOLDER · Replace with starfield interface capture</text>
+</svg>

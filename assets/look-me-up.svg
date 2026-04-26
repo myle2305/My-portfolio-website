@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">LOOK ME UP placeholder</title>
+  <desc id="desc">Editorial placeholder for an avatar dress-up game.</desc>
+  <rect width="1200" height="720" fill="#f1ece2"/>
+  <rect x="86" y="78" width="1028" height="564" rx="12" fill="#fffaf0" stroke="#1a1a1a" stroke-width="3"/>
+  <circle cx="402" cy="248" r="88" fill="#e8b09a" stroke="#111" stroke-width="3"/>
+  <path d="M288 584c18-130 63-214 136-214s118 84 136 214" fill="#1e6c69" stroke="#111" stroke-width="3"/>
+  <path d="M326 215c38-86 151-88 185 4-40-26-133-32-185-4z" fill="#111"/>
+  <rect x="678" y="148" width="270" height="54" rx="27" fill="#b83f2f"/>
+  <rect x="678" y="244" width="350" height="54" rx="27" fill="#f5d76e" stroke="#111" stroke-width="3"/>
+  <rect x="678" y="340" width="224" height="54" rx="27" fill="#1e6c69"/>
+  <rect x="678" y="436" width="306" height="54" rx="27" fill="#111"/>
+  <text x="92" y="692" fill="#111" font-family="Inter, Arial" font-size="30" font-weight="700">PLACEHOLDER · Replace with game screenshot or screen recording still</text>
+</svg>

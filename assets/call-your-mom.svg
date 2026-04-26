@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Call Your Mom Challenge placeholder</title>
+  <desc id="desc">Editorial placeholder for a social video campaign.</desc>
+  <rect width="1200" height="720" fill="#f3eee6"/>
+  <rect x="410" y="72" width="380" height="590" rx="52" fill="#111"/>
+  <rect x="438" y="122" width="324" height="476" rx="10" fill="#fff8ed"/>
+  <circle cx="600" cy="630" r="18" fill="#f3eee6"/>
+  <text x="486" y="232" fill="#111" font-family="Inter, Arial" font-size="42" font-weight="700">CALL</text>
+  <text x="486" y="292" fill="#111" font-family="Inter, Arial" font-size="42" font-weight="700">YOUR</text>
+  <text x="486" y="352" fill="#b83f2f" font-family="Inter, Arial" font-size="42" font-weight="700">MOM</text>
+  <path d="M520 454c38 40 118 40 160 0" fill="none" stroke="#1e6c69" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="514" cy="430" r="18" fill="#e8b09a"/>
+  <circle cx="686" cy="430" r="18" fill="#e8b09a"/>
+  <text x="70" y="676" fill="#111" font-family="Inter, Arial" font-size="30" font-weight="700">PLACEHOLDER · Replace with video stills, storyboards, or motion frames</text>
+</svg>

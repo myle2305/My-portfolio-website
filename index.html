@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="My Le is a Digital Media and UX/UI design student creating playful interactive digital experiences."
+    />
+    <title>My Le — UX/UI + Interactive Media Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;520;650;700&family=Playfair+Display:wght@550;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="site-nav" data-nav></nav>
+
+      <main>
+        <section class="hero section-pad reveal">
+          <div class="hero-art" data-hero-art aria-hidden="true">
+            <span class="palette-ribbon ribbon-plum"></span>
+            <span class="palette-ribbon ribbon-lavender"></span>
+            <span class="palette-ribbon ribbon-blue"></span>
+            <span class="palette-ribbon ribbon-pink"></span>
+            <span class="palette-ribbon ribbon-peach"></span>
+            <span class="hero-caption">UX/UI · Motion · Code</span>
+          </div>
+
+          <div class="hero-text">
+            <p class="hero-name">My Le</p>
+            <p>UX/UI Designer + Interactive Media Designer</p>
+            <p>
+              I create interactive digital experiences that combine user-centred
+              design, motion, sound, and playful visual systems.
+            </p>
+          </div>
+        </section>
+
+        <!-- Project groups are populated from js/main.js. Edit project categories there if you add or move work. -->
+        <section
+          class="section-pad work-section"
+          id="work"
+          data-project-group="ux-ui"
+        ></section>
+        <section
+          class="section-pad work-section"
+          data-project-group="animation-video"
+        ></section>
+      </main>
+
+      <footer class="site-footer">
+        <span>My Le · Digital Media / UX/UI Design</span>
+        <span>Melbourne · 2026</span>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
