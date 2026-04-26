@@ -470,7 +470,7 @@ const projects = {
   "sound-galaxy": {
     title: "Sound Galaxy",
     category: "Spatial Audio Interface",
-    group: "animation-video",
+    group: "ux-ui",
     year: "2025",
     summary: "A galaxy-themed sound interface where users navigate a starfield and trigger audio through exploration.",
     role: "Interaction designer, sound experience designer, creative coder",
