@@ -700,6 +700,14 @@ function projectCard(slug, project, index) {
   `;
 }
 
+function sortProjectsByTimeline(projectEntries) {
+  return [...projectEntries].sort(([, projectA], [, projectB]) => {
+    const yearA = Number(projectA.year) || 0;
+    const yearB = Number(projectB.year) || 0;
+    return yearA - yearB;
+  });
+}
+
 function renderFeaturedProjects() {
   const sections = document.querySelectorAll("[data-project-group]");
   if (!sections.length) return;
@@ -707,7 +715,9 @@ function renderFeaturedProjects() {
   sections.forEach(section => {
     const groupId = section.dataset.projectGroup;
     const group = projectGroups.find(item => item.id === groupId);
-    const groupProjects = Object.entries(projects).filter(([, project]) => project.group === groupId);
+    const groupProjects = sortProjectsByTimeline(
+      Object.entries(projects).filter(([, project]) => project.group === groupId)
+    );
 
     section.innerHTML = `
       <div class="section-heading reveal">
