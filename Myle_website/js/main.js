@@ -522,9 +522,9 @@ const projects = {
         caption: "The first version introduced the Sound Galaxy identity with a darker space background, glowing pixel title, and a simple star entry point before the interaction system was expanded."
       },
       {
-        src: "../assets/sg-interface.jpg",
+        src: "../assets/sg.jpg",
         title: "Interface",
-        caption: "The main interface shows the interactive starfield, connected constellation lines, sound control, and exploration controls used while navigating the spatial audio experience."
+        caption: "The opening interface introduces the Sound Galaxy identity, instructions, and exploration prompt before users enter the spatial audio starfield."
       },
       {
         src: "../assets/sg-idea-olia.jpg",
