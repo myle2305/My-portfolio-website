@@ -51,7 +51,6 @@ const projects = {
     reflection:
       "This project helped me connect interaction design principles with emotional play. I learned that small feedback moments, such as sound and sparkle cues, can make a creative tool feel more satisfying and alive.",
     liveUrl: "https://myle2305.github.io/asm3/",
-    presentationUrl: "../assets/look-me-up-presentation.pdf",
     screenshots: [
       {
         src: "../assets/lmui.jpg",
@@ -583,10 +582,10 @@ const projectGroups = [
   },
   {
     id: "animation-video",
-    eyebrow: "Heightened Multisensory + Animation Video",
-    title: "Sound, Motion, Storytelling, and Social Campaigns",
+    eyebrow: "Heightened Multisensory + Sound Interaction",
+    title: "Experimental Video, Spatial Sound, and Sensory Media",
     description:
-      "Projects from multisensory media, sound interaction, motion-led communication, screen-based storytelling, and visual narrative."
+      "Projects focused on audiovisual atmosphere, interactive sound, spatial exploration, motion, and emotional sensory experience."
   }
 ];
 
