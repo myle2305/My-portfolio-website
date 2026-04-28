@@ -515,6 +515,7 @@ const projects = {
     liveUrl: "https://myle2305.github.io/IDADa3/",
     processUrl: "https://myle2305.github.io/asm2/",
     prototypeUrl: "https://myle2305.github.io/IDADa2/landingpage.html",
+    hidePlaceholders: true,
     screenshots: [
       {
         src: "../assets/sg-prototype.jpg",
