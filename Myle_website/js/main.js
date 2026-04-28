@@ -638,7 +638,7 @@ function initFooter() {
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="${base}index.html#work">Projects</a>
         <a href="${base}about.html">About</a>
-        <a href="${base}assets/My-Le-CV.pdf" target="_blank" rel="noopener">PDF CV</a>
+        <a href="https://drive.google.com/file/d/1aLJb__FAEPdITDQG5XFwklKSUru5r0eg/view?usp=sharing" target="_blank" rel="noopener">PDF CV</a>
       </nav>
       <div class="footer-socials" aria-label="Social links">
         <a href="https://www.linkedin.com/in/my-le-002452354/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
