@@ -434,6 +434,10 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
+.page-hero > .eyebrow {
+  margin-left: 6px;
+}
+
 .page-hero h1,
 .project-hero h1 {
   max-width: 960px;
