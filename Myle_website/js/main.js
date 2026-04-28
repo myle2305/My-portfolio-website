@@ -113,7 +113,7 @@ const projects = {
     reflection:
       "This project helped me understand how an infographic can behave like an interface, especially in a collaborative workflow. I learned to connect information design, visual style, and prototype logic so users can actively explore the content.",
     figmaUrl:
-      "https://www.figma.com/proto/cZEFxyuhAQjAlm5xPl65YZ/true-beauty-2-(fixed)?type=design&node-id=39-165&t=8gd0rrQzX1fI3OGb-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=39%3A165&show-proto-sidebar=1&mode=design",
+      "https://www.figma.com/proto/oE2qORfK3pjf5jgm6DnmEY/true-beauty_1--Copy-?page-id=0%3A1&node-id=180-14015&p=f&viewport=126%2C582%2C0.02&t=ivqmF7rNyErY80T4-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=39%3A165&show-proto-sidebar=1",
     hidePlaceholders: true,
     screenshots: [
       {
