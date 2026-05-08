@@ -668,7 +668,7 @@ function initFooter() {
       <span class="footer-logo-mark"><span>M</span><span>L</span></span>
     </a>
     <div class="footer-line"></div>
-    <p class="footer-copy">© 2026 My Le. All rights reserved.</p>
+    <p class="footer-copy">© 2026 | My Le | All rights reserved.</p>
   `;
 }
 
