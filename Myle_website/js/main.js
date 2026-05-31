@@ -638,7 +638,7 @@ function initFooter() {
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="${base}index.html#work">Projects</a>
         <a href="${base}about.html">About</a>
-        <a href="https://drive.google.com/file/d/1aLJb__FAEPdITDQG5XFwklKSUru5r0eg/view?usp=sharing" target="_blank" rel="noopener">PDF CV</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="footer-socials" aria-label="Social links">
         <a href="https://www.linkedin.com/in/my-le-002452354/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
@@ -646,29 +646,39 @@ function initFooter() {
         <a href="https://www.behance.net/myle44" target="_blank" rel="noopener" aria-label="Behance">Be</a>
       </div>
     </div>
-    <div class="footer-contact" id="contact" aria-label="Contact details">
-      <a class="contact-item" href="mailto:mylenguyentuong@gmail.com">
-        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
-        <span>mylenguyentuong@gmail.com</span>
-      </a>
-      <a class="contact-item" href="tel:+61433532305">
-        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M7 4h4l2 5-3 2c1.3 2.7 3.3 4.7 6 6l2-3 5 2v4c0 1.1-.9 2-2 2C10.5 22 2 13.5 2 3c0-1.1.9-2 2-2h3z"/></svg>
-        <span>+61 433532305</span>
-      </a>
-      <span class="contact-item">
-        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-12a7 7 0 0 0-14 0c0 6.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        <span>Melbourne, VIC</span>
-      </span>
-      <a class="contact-item" href="https://www.instagram.com/mielei_23/" target="_blank" rel="noopener">
-        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><path d="M17 7h.01"/></svg>
-        <span>@mielei_23</span>
-      </a>
-    </div>
-    <a href="${base}index.html" class="footer-logo" aria-label="My Le home">
-      <span class="footer-logo-mark"><span>M</span><span>L</span></span>
-    </a>
+    <section class="footer-contact-panel" id="contact" aria-label="Contact details">
+      <div class="footer-contact-intro">
+        <p class="footer-label">Contact</p>
+        <h2>Let's connect.</h2>
+        <p>Available for UX/UI, interactive media, and digital design opportunities.</p>
+        <a class="footer-cv-link" href="https://drive.google.com/file/d/1aLJb__FAEPdITDQG5XFwklKSUru5r0eg/view?usp=sharing" target="_blank" rel="noopener">Open CV</a>
+      </div>
+      <div class="footer-contact">
+        <a class="contact-item" href="mailto:mylenguyentuong@gmail.com">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          <span><strong>Email</strong>mylenguyentuong@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+61433532305">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M7 4h4l2 5-3 2c1.3 2.7 3.3 4.7 6 6l2-3 5 2v4c0 1.1-.9 2-2 2C10.5 22 2 13.5 2 3c0-1.1.9-2 2-2h3z"/></svg>
+          <span><strong>Mobile</strong>+61 433532305</span>
+        </a>
+        <span class="contact-item">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-12a7 7 0 0 0-14 0c0 6.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span><strong>Location</strong>Melbourne, VIC</span>
+        </span>
+        <a class="contact-item" href="https://www.instagram.com/mielei_23/" target="_blank" rel="noopener">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><path d="M17 7h.01"/></svg>
+          <span><strong>Instagram</strong>@mielei_23</span>
+        </a>
+      </div>
+    </section>
     <div class="footer-line"></div>
-    <p class="footer-copy">© 2026 | My Le | All rights reserved.</p>
+    <div class="footer-bottom">
+      <a href="${base}index.html" class="footer-logo" aria-label="My Le home">
+        <span class="footer-logo-mark"><span>M</span><span>L</span></span>
+      </a>
+      <p class="footer-copy">© 2026 | My Le | All rights reserved.</p>
+    </div>
   `;
 }
 
