@@ -602,7 +602,7 @@ function initNav() {
     <div class="nav-inner">
       <a href="${base}index.html" class="brand" aria-label="My Le home">
         <!-- Replace this mark with your own logo image if you have one. -->
-        <img class="logo-image" src="${base}assets/my-le-logo.jpg" alt="My Le logo">
+        <img class="logo-image" src="${base}assets/my-le-logo-cutout.png" alt="My Le logo">
         <span class="brand-name">My Le</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
@@ -648,7 +648,11 @@ function initFooter() {
         <p class="footer-label">Contact</p>
         <h2>Let's connect.</h2>
         <p>Available for UX/UI, interactive media, and digital design opportunities.</p>
-        <a class="footer-cv-link" href="https://drive.google.com/file/d/1aLJb__FAEPdITDQG5XFwklKSUru5r0eg/view?usp=sharing" target="_blank" rel="noopener">Open CV</a>
+        <div class="contact-actions" aria-label="Main contact links">
+          <a class="footer-cv-link is-primary" href="https://drive.google.com/file/d/1aLJb__FAEPdITDQG5XFwklKSUru5r0eg/view?usp=sharing" target="_blank" rel="noopener">Open CV</a>
+          <a class="footer-cv-link" href="mailto:mylenguyentuong@gmail.com">Email me</a>
+          <a class="footer-cv-link" href="https://www.linkedin.com/in/my-le-002452354/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
       <div class="footer-contact">
         <a class="contact-item" href="mailto:mylenguyentuong@gmail.com">
@@ -667,12 +671,20 @@ function initFooter() {
           <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><path d="M17 7h.01"/></svg>
           <span><strong>Instagram</strong>@mielei_23</span>
         </a>
+        <a class="contact-item" href="https://www.behance.net/myle44" target="_blank" rel="noopener">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 7h7"/><path d="M4 12h8"/><path d="M4 17h7"/><path d="M15 11h5"/><path d="M15 7h5"/><path d="M15 17h5"/><path d="M20 11a3 3 0 1 1 0 6"/></svg>
+          <span><strong>Behance</strong>behance.net/myle44</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/my-le-002452354/" target="_blank" rel="noopener">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 10v10"/><path d="M6 6v.01"/><path d="M11 20v-6a4 4 0 0 1 8 0v6"/><path d="M11 10v10"/></svg>
+          <span><strong>LinkedIn</strong>my-le-002452354</span>
+        </a>
       </div>
     </section>
     <div class="footer-line"></div>
     <div class="footer-bottom">
       <a href="${base}index.html" class="footer-logo" aria-label="My Le home">
-        <img class="footer-logo-image" src="${base}assets/my-le-logo.jpg" alt="My Le logo">
+        <img class="footer-logo-image" src="${base}assets/my-le-logo-cutout.png" alt="My Le logo">
       </a>
       <p class="footer-copy">© 2026 | My Le | All rights reserved.</p>
     </div>
@@ -682,12 +694,74 @@ function initFooter() {
 function initHeroMotion() {
   const heroArt = document.querySelector("[data-hero-art]");
   if (!heroArt) return;
+  heroArt.style.setProperty("--art-x", "0px");
+  heroArt.style.setProperty("--art-y", "0px");
+  heroArt.querySelectorAll("[style*='--scroll-y']").forEach(item => {
+    item.style.setProperty("--scroll-y", "0px");
+  });
+}
 
-  window.addEventListener("mousemove", event => {
-    const x = (event.clientX / window.innerWidth - 0.5) * 2;
-    const y = (event.clientY / window.innerHeight - 0.5) * 2;
-    heroArt.style.setProperty("--art-x", `${x * 18}px`);
-    heroArt.style.setProperty("--art-y", `${y * 18}px`);
+function initSparkles() {
+  if (document.querySelector(".sparkle-field")) return;
+
+  const field = document.createElement("div");
+  field.className = "sparkle-field";
+  field.setAttribute("aria-hidden", "true");
+
+  const colors = ["#f7f1f6", "#c7d7fb", "#f1b0da", "#fec4b6", "#f4d76b"];
+  for (let index = 0; index < 52; index += 1) {
+    const sparkle = document.createElement("span");
+    sparkle.style.left = `${Math.random() * 100}%`;
+    sparkle.style.top = `${Math.random() * 100}%`;
+    sparkle.style.setProperty("--spark-size", `${2 + Math.random() * 4}px`);
+    sparkle.style.setProperty("--spark-delay", `${Math.random() * -6}s`);
+    sparkle.style.setProperty("--spark-speed", `${3 + Math.random() * 5}s`);
+    sparkle.style.setProperty("--spark-color", colors[index % colors.length]);
+    field.appendChild(sparkle);
+  }
+
+  document.body.prepend(field);
+}
+
+function initDraggableCollage() {
+  const dragItems = document.querySelectorAll(".collage-logo, .collage-piece, .paper-note, .pixel-sticker, .ticket-stub, .profile-polaroid, .washi-tape, .barcode-sticker, .pattern-tape, .scrapbook-star, .button-sticker, .sticker-bow, .sticker-cloud");
+  if (!dragItems.length) return;
+
+  dragItems.forEach(item => {
+    let startX = 0;
+    let startY = 0;
+    let originX = Number(item.dataset.dragX || 0);
+    let originY = Number(item.dataset.dragY || 0);
+
+    item.addEventListener("pointerdown", event => {
+      event.preventDefault();
+      item.setPointerCapture(event.pointerId);
+      startX = event.clientX;
+      startY = event.clientY;
+      originX = Number(item.dataset.dragX || 0);
+      originY = Number(item.dataset.dragY || 0);
+      item.classList.add("is-dragging");
+    });
+
+    item.addEventListener("pointermove", event => {
+      if (!item.classList.contains("is-dragging")) return;
+      const nextX = originX + event.clientX - startX;
+      const nextY = originY + event.clientY - startY;
+      item.dataset.dragX = String(nextX);
+      item.dataset.dragY = String(nextY);
+      item.style.setProperty("--drag-x", `${nextX}px`);
+      item.style.setProperty("--drag-y", `${nextY}px`);
+    });
+
+    const stopDrag = event => {
+      if (item.hasPointerCapture(event.pointerId)) {
+        item.releasePointerCapture(event.pointerId);
+      }
+      item.classList.remove("is-dragging");
+    };
+
+    item.addEventListener("pointerup", stopDrag);
+    item.addEventListener("pointercancel", stopDrag);
   });
 }
 
@@ -896,9 +970,11 @@ function initReveal() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initSparkles();
   initNav();
   initFooter();
   initHeroMotion();
+  initDraggableCollage();
   renderFeaturedProjects();
   renderProjectPage();
   initReveal();
