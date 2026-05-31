@@ -602,10 +602,7 @@ function initNav() {
     <div class="nav-inner">
       <a href="${base}index.html" class="brand" aria-label="My Le home">
         <!-- Replace this mark with your own logo image if you have one. -->
-        <span class="logo-mark" data-logo-mark>
-          <span>M</span>
-          <span>L</span>
-        </span>
+        <img class="logo-image" src="${base}assets/my-le-logo.jpg" alt="My Le logo">
         <span class="brand-name">My Le</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
@@ -675,7 +672,7 @@ function initFooter() {
     <div class="footer-line"></div>
     <div class="footer-bottom">
       <a href="${base}index.html" class="footer-logo" aria-label="My Le home">
-        <span class="footer-logo-mark"><span>M</span><span>L</span></span>
+        <img class="footer-logo-image" src="${base}assets/my-le-logo.jpg" alt="My Le logo">
       </a>
       <p class="footer-copy">© 2026 | My Le | All rights reserved.</p>
     </div>

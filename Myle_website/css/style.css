@@ -92,36 +92,12 @@ img {
   color: transparent;
 }
 
-.logo-mark {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 18px);
-  gap: 3px;
-  width: 39px;
-  height: 28px;
-  overflow: visible;
-}
-
-.logo-mark span {
-  display: grid;
-  place-items: center;
-  min-width: 18px;
-  min-height: 24px;
-  border: 1px solid var(--ink);
-  border-radius: 999px;
-  color: var(--ink);
-  font-size: 10px;
-  font-weight: 650;
-  line-height: 1;
-}
-
-.logo-mark span:first-child {
-  background: var(--pink);
-}
-
-.logo-mark span:last-child {
-  background: var(--blue);
-  transform: translateY(5px);
+.logo-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
 }
 
 .nav-links {
@@ -818,27 +794,11 @@ img {
   width: fit-content;
 }
 
-.footer-logo-mark {
-  display: grid;
-  grid-template-columns: repeat(2, 28px);
-  gap: 5px;
-  width: 61px;
-  height: 42px;
-}
-
-.footer-logo-mark span {
-  display: grid;
-  place-items: center;
-  min-height: 38px;
-  border: 1px solid #f7f1f6;
-  border-radius: 999px;
-  color: #f7f1f6;
-  font-size: 13px;
-  font-weight: 650;
-}
-
-.footer-logo-mark span:last-child {
-  transform: translateY(6px);
+.footer-logo-image {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .footer-line {
