@@ -121,14 +121,38 @@ button,
 
 .sparkle-field span {
   position: absolute;
-  width: var(--spark-size, 3px);
-  height: var(--spark-size, 3px);
+  width: var(--spark-size, 10px);
+  height: var(--spark-size, 10px);
   border-radius: 0;
-  background: var(--spark-color, #f7f1f6);
-  box-shadow: 0 0 4px var(--spark-color, #f7f1f6), 0 0 10px var(--spark-color, #f7f1f6);
-  opacity: 0.12;
+  background:
+    radial-gradient(circle, var(--spark-color, #f7f1f6) 0 10%, transparent 11%),
+    linear-gradient(90deg, transparent 0 45%, var(--spark-color, #f7f1f6) 45% 55%, transparent 55% 100%),
+    linear-gradient(0deg, transparent 0 45%, var(--spark-color, #f7f1f6) 45% 55%, transparent 55% 100%);
+  clip-path: polygon(50% 0, 56% 41%, 100% 50%, 56% 59%, 50% 100%, 44% 59%, 0 50%, 44% 41%);
+  filter: drop-shadow(0 0 3px var(--spark-color, #f7f1f6));
+  opacity: 0.14;
   animation: sparklePulse var(--spark-speed, 4s) ease-in-out infinite;
   animation-delay: var(--spark-delay, 0s);
+  transform: rotate(var(--spark-rotate, 0deg));
+}
+
+.sparkle-field span::before,
+.sparkle-field span::after {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 72%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--spark-color, #f7f1f6), transparent);
+  content: "";
+  transform-origin: center;
+}
+
+.sparkle-field span::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sparkle-field span::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .site-nav {
@@ -1591,6 +1615,20 @@ button,
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.contact-icon-text {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  margin-top: 2px;
+  border: 1.7px solid currentColor;
+  color: currentColor;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .contact-item span {

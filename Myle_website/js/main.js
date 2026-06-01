@@ -672,7 +672,7 @@ function initFooter() {
           <span><strong>Instagram</strong>@mielei_23</span>
         </a>
         <a class="contact-item" href="https://www.behance.net/myle44" target="_blank" rel="noopener">
-          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 7h7"/><path d="M4 12h8"/><path d="M4 17h7"/><path d="M15 11h5"/><path d="M15 7h5"/><path d="M15 17h5"/><path d="M20 11a3 3 0 1 1 0 6"/></svg>
+          <span class="contact-icon-text" aria-hidden="true">Be</span>
           <span><strong>Behance</strong>behance.net/myle44</span>
         </a>
         <a class="contact-item" href="https://www.linkedin.com/in/my-le-002452354/" target="_blank" rel="noopener">
@@ -708,15 +708,16 @@ function initSparkles() {
   field.className = "sparkle-field";
   field.setAttribute("aria-hidden", "true");
 
-  const colors = ["#f7f1f6", "#c7d7fb", "#f1b0da", "#fec4b6", "#f4d76b"];
-  for (let index = 0; index < 52; index += 1) {
+  const colors = ["#fffaf2", "#c7d7fb", "#f1b0da", "#fec4b6", "#f4d76b"];
+  for (let index = 0; index < 44; index += 1) {
     const sparkle = document.createElement("span");
     sparkle.style.left = `${Math.random() * 100}%`;
     sparkle.style.top = `${Math.random() * 100}%`;
-    sparkle.style.setProperty("--spark-size", `${2 + Math.random() * 4}px`);
+    sparkle.style.setProperty("--spark-size", `${5 + Math.random() * 8}px`);
     sparkle.style.setProperty("--spark-delay", `${Math.random() * -6}s`);
     sparkle.style.setProperty("--spark-speed", `${3 + Math.random() * 5}s`);
     sparkle.style.setProperty("--spark-color", colors[index % colors.length]);
+    sparkle.style.setProperty("--spark-rotate", `${Math.random() * 90}deg`);
     field.appendChild(sparkle);
   }
 
